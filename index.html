@@ -5,11 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucky S Lodhi | Software Developer</title>
     <meta name="description" content="Personal portfolio of Lucky S Lodhi, a software developer specializing in agentic AI and backend systems.">
-    
-    <!-- Open Graph tags -->
+    <meta name="keywords" content="Lucky S Lodhi, Lucky Lodhi, Software Developer, Backend Engineer, Agentic AI, RAG, Python, Django, FastAPI, React">
+    <meta name="author" content="Lucky S Lodhi">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://luckyslodhi.me/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://luckyslodhi.me/">
     <meta property="og:title" content="Lucky S Lodhi | Software Developer">
     <meta property="og:description" content="Personal portfolio of Lucky S Lodhi, a software developer specializing in agentic AI and backend systems.">
-    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://luckyslodhi.me/og-image.png">
+    <meta property="og:image:alt" content="Lucky S Lodhi Portfolio Preview">
+    <meta property="og:site_name" content="Lucky S Lodhi Portfolio">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://luckyslodhi.me/">
+    <meta property="twitter:title" content="Lucky S Lodhi | Software Developer">
+    <meta property="twitter:description" content="Personal portfolio of Lucky S Lodhi, a software developer specializing in agentic AI and backend systems.">
+    <meta property="twitter:image" content="https://luckyslodhi.me/og-image.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +33,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles.css">
+
+    <!-- JSON-LD Structured Data for Person and WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://luckyslodhi.me/#person",
+          "name": "Lucky S Lodhi",
+          "jobTitle": "Software Developer",
+          "description": "Software developer specializing in agentic AI, RAG pipelines, and backend systems.",
+          "url": "https://luckyslodhi.me/",
+          "sameAs": [
+            "https://github.com/Lucky-Lodhi2004",
+            "https://www.linkedin.com/in/lucky-s-lodhi-923228327"
+          ],
+          "knowsAbout": [
+            "Software Development",
+            "Agentic AI",
+            "Retrieval-Augmented Generation (RAG)",
+            "Backend Systems",
+            "Django",
+            "FastAPI",
+            "React",
+            "Python",
+            "JavaScript",
+            "TypeScript"
+          ],
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Institute of Engineering and Technology, Devi Ahilya Vishwavidyalaya (IET DAVV), Indore"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://luckyslodhi.me/#website",
+          "url": "https://luckyslodhi.me/",
+          "name": "Lucky S Lodhi | Software Developer Portfolio",
+          "description": "Personal portfolio of Lucky S Lodhi",
+          "publisher": {
+            "@id": "https://luckyslodhi.me/#person"
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header class="navbar">
@@ -127,8 +190,8 @@
                     <div class="project-content">
                         <h3 class="project-title">Leo</h3>
                         <p class="project-tagline">A RAG + agentic personal assistant that lives in your dashboard, WhatsApp, Telegram, and GitHub.</p>
-                        <button class="show-more-btn">Show more</button>
-                        <div class="project-details">
+                        <button class="show-more-btn" aria-expanded="false" aria-controls="project-details-leo">Show more</button>
+                        <div class="project-details" id="project-details-leo">
                             <ul class="project-desc">
                                 <li>A RAG and agent-based personal assistant with a real-time dashboard, plus WhatsApp, Telegram, and GitHub connectivity.</li>
                                 <li>Chat with the assistant through the web app, WhatsApp, or Telegram — ask questions based on your day's activity, and log new activities straight to your dashboard.</li>
@@ -170,8 +233,8 @@
                     <div class="project-content">
                         <h3 class="project-title">Sayana</h3>
                         <p class="project-tagline">A free, zero-cost CLI coding assistant — no subscription required.</p>
-                        <button class="show-more-btn">Show more</button>
-                        <div class="project-details">
+                        <button class="show-more-btn" aria-expanded="false" aria-controls="project-details-sayana">Show more</button>
+                        <div class="project-details" id="project-details-sayana">
                             <ul class="project-desc">
                                 <li>A CLI coding assistant that runs at zero cost in free mode, unlike commercial alternatives.</li>
                                 <li>Powered by FCFS (first-come-first-served) circular switching across Groq and OpenRouter hosted models to stay completely free.</li>
@@ -200,8 +263,8 @@
                     <div class="project-content">
                         <h3 class="project-title">ChitChat</h3>
                         <p class="project-tagline">A blogging platform with an ML engine that ranks your feed.</p>
-                        <button class="show-more-btn">Show more</button>
-                        <div class="project-details">
+                        <button class="show-more-btn" aria-expanded="false" aria-controls="project-details-chitchat">Show more</button>
+                        <div class="project-details" id="project-details-chitchat">
                             <ul class="project-desc">
                                 <li>A web-based blogging app with a machine-learning ranking engine that actively shapes your feed.</li>
                                 <li>Uses algorithmic and AI/ML models to rank posts the way Twitter/Instagram rank content — surfacing what's most relevant instead of strict chronological order.</li>

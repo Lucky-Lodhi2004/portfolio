@@ -69,9 +69,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (details.classList.contains('expanded')) {
                 details.classList.remove('expanded');
                 btn.textContent = 'Show more';
+                btn.setAttribute('aria-expanded', 'false');
             } else {
                 details.classList.add('expanded');
                 btn.textContent = 'Show less';
+                btn.setAttribute('aria-expanded', 'true');
             }
         });
     });
